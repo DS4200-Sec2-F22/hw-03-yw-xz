@@ -12,116 +12,88 @@
     <h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
 
     <div class="column">
-        <div class="row1">
+        <div id="row1" class="row">
             <div>
-                <img src="img/vis1.png" width="100%" height="100%">
+                <img src='img/vis1.png'>
             </div>
-            <div class="button-div">
-                <button id="r1-mc" onclick="revealText('b-mc1')">Reveal Marks and Channels</button>
-            </div>
-            <div id="b-mc1" style="display: none;">
-                <h3>Marks</h3>
-                <ul>
-                    <li>Area</li>
-                </ul>
-                <h3>Channels</h3>
-                <ul>
-                    <li>Color</li>
-                    <ul>
-                        <li>Using color is a good choice because it clearly reveals the majority of women's votes towards
-                            which cadidate of each States. Also, there is a mixed colored area to show a special case.
-                        </li>
-                        <li>
-                            It supoorts discriminability, separability, visual popout, and grouping. 
-                        </li>
-                    </ul>
-                </ul>
+            <div class="button">
+                <div class="button-mc">
+                    <button id="r1-mc" onclick="revealText('b-mc1')">Reveal Marks and Channels</button>
+                    <div id="b-mc1" style="display: none;">
+                        <h3>Marks</h3>
+                        <ul><li>Area</li></ul>
+                        <h3>Channels</h3>
+                        <ul><li>Color</li>
+                            <ul>
+                                <li>Using color is a good choice because it clearly reveals the majority of women's votes towardswhich cadidate of each States. Also, there is a mixed colored area to show a special case.</li>
+                                <li>It supoorts discriminability, separability, visual popout, and grouping.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="button-cm">
+                    <button>Reveal Colormap(s)</button>
+                    <div id="b-cm1" style="display: none;">
+                        <h3>Colormap</h3>
+                        <ul><li>Categorical</li>
+                            <ul><li>The choice of blue and red clearly represents two 
+                            categories representing votes towards which candidate.</li></ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="button-div">
-                <button>Reveal Colormap(s)</button>
-            </div>
-            <div id="b-c1" style="display: none;">
-                <h3>Colormap</h3>
-                <ul>
-                    <li>
-                        Categorical
-                    </li>
-                    <ul>
-                        <li>
-                            The choice of blue and red clearly represents two 
-                            categories representing votes towards which candidate.
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-            
-            
-
         </div>
 
-        <div class="row2">
-            <div>
-                <img src="img/vis2.png" width="100%" height="100%">
-            </div>
-            <div>
-                <button>Reveal Marks and Channels</button>
-            </div>
-            <div id="b-mc2" style="display: none;">
-                <h3>Marks</h3>
-                <ul>
-                    <li>Points</li>
-                    <li>Lines</li>
-                </ul>
-                <h3>Channels</h3>
-                <ul>
-                    <li>Position</li>
-                    <ul>
-                        <li>
-                            Using both horizontal and vertical positions, which is good for this image. 
-                        </li>
-                        <li>
-                            It specifies discriminability and grouping.
-                        </li>
+        <div id="row2" class="row">
+            <div> <img src='img/vis2.png'> </div>
+            <div class="buttons">
+                <div class="button-mc">
+                    <button>Reveal Marks and Channels</button>
+                    <div id="b-mc2" style="display: none;">
+                        <h3>Marks</h3>
+                        <ul><li>Points</li>
+                            <li>Lines</li>
+                        </ul>
+                        <h3>Channels</h3>
+                        <ul>
+                        <li>Position</li>
+                        <ul>
+                            <li>Using both horizontal and vertical positions, which is good for this image. </li>
+                            <li>It specifies discriminability and grouping.</li>
+                        </ul>
+                        <li>Color</li>
+                        <ul>
+                            <li>Using color is a good choice because it clearly shows at what angle and velocity would be most likely to score home runs.</li>
+                            <li>
+                            It supoorts discriminability, separability, visual popout, and grouping. </li>
+                        </ul>
                     </ul>
-                    <li>Color</li>
-                    <ul>
-                        <li>
-                            Using color is a good choice because it clearly shows at what angle and velocity would
-                            be most likely to score home runs.
-                        </li>
-                        <li>
-                            It supoorts discriminability, separability, visual popout, and grouping. 
-                        </li>
-                    </ul>
-                </ul>
+                </div>
+            </div>
 
-            </div>
-            <div>
+            <div class="button-cm">
                 <button>Reveal Colormap(s)</button>
-            </div>
-            <div id="b-c2" style="display: none;">
-                <h3>Colormaps</h3>
-                <ul>
-                    <li>
-                        Divergent
-                    </li>
+                <div id="b-c2" style="display: none;">
+                    <h3>Colormaps</h3>
+                    <ul><li>Divergent</li>
                     <ul>
-                        <li>
-                            Using two different colors, purple and orange to clearly show lower and higher scoring.
-                            It is a good choice to differentiate two extremes from average.
+                        <li>Using two different colors, purple and orange to clearly show lower and higher scoring.It is a good choice to differentiate two extremes from average.
                         </li>
                     </ul>
                 </ul>
             </div>
-            
-
         </div>
-
     </div>
+</div>
+</div>
+
     <script src="hw-03.js"></script>
 
-
+    <h2>Acknowledgements</h2>
+    <ul>
+        
+    </ul>
 </body>
 
 </html>
