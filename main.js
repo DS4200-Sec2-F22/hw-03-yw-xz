@@ -1,3 +1,4 @@
-function revealText(elementID) {
-	document.getElementById(elementID).style.display="inline";
+function revealText(textID, buttonID) {
+	document.getElementById(textID).style.display="inline";
+	document.getElementById(buttonID).style.display="none";
 }
